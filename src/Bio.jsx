@@ -1,18 +1,14 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
-
 import VideoDsply from "./VideoLinks";
-
-
 
 const Bio = () => {
   return (
       
       <div
-        style={{ backgroundColor: "rgb(97, 11, 11, 0.2)", margin: "0 5% 0 5%" }}
+        style={{ backgroundColor: "rgb(97, 11, 11, 0.2)", margin: "0 5% 0 10%" }} id = "top"
       >
       
-
           <h3 id="img-caption">
             <em>
               Jascha Heifetz (February 2, 1901 - December 10, 1987), is
@@ -310,15 +306,22 @@ const Bio = () => {
               Achievement Award from the National Academy of Recording Arts and
               Sciences.
             </p>
+            <div id = "tribute-link" >
+              <ul class = "flex-container" >
+                <li>
             <a
-              id="tribute-link"
-              href="https://en.wikipedia.org/wiki/Jascha_Heifetz"
+               href="https://en.wikipedia.org/wiki/Jascha_Heifetz"
               target="_blank"
-              class="tributeInfo"
-            >
-              Discover more about Heifetz here{" "}
+                         >
+              More about Heifetz{" "}
             </a>
+            </li>
+            <li>
+            <a href = "#title"  >Back to top</a>
+            </li>
+            </ul>
             <h3>Example of Heifetz's Remarkable Violin Playing</h3>
+            </div>
             <div>
               <div id="HeifetzClip">
                 <VideoDsply />
@@ -330,7 +333,5 @@ const Bio = () => {
     )
               };
   
-
-
 
 export default Bio;
