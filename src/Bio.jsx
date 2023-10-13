@@ -6,7 +6,7 @@ const Bio = () => {
   return (
       
       <div
-        style={{ backgroundColor: "rgb(97, 11, 11, 0.2)", margin: "0 5% 0 10%" }} id = "top"
+        style={{ backgroundColor: "rgb(97, 11, 11, 0.2)", width: "90%", marginLeft:"auto",marginRight: "auto"  }} id = "top" className = "main"
       >
       
           <h3 id="img-caption">
@@ -17,11 +17,11 @@ const Bio = () => {
             </em>
           </h3>
           <p style={{ marginBottom: "50px" }}>
-            <a href="#HeifetzClip" class="tributeInfo">
+            <a href="#HeifetzClip" className ="tributeInfo">
               See Heifetz play!
             </a>
           </p>
-          <div className="tributeInfo">
+          <div className ="tributeInfo">
             <h3>General Timeline of Heifetz's Life and Career</h3>
             <p>
               <strong>1901:</strong> Born in Vilnius, Lithuania (then a part of
@@ -307,11 +307,11 @@ const Bio = () => {
               Sciences.
             </p>
             <div id = "tribute-link" >
-              <ul class = "flex-container" >
+              <ul className = "flex-container" >
                 <li>
             <a
                href="https://en.wikipedia.org/wiki/Jascha_Heifetz"
-              target="_blank"
+               target="_blank"
                          >
               More about Heifetz{" "}
             </a>
